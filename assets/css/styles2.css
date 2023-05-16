@@ -1,0 +1,45 @@
+.header {
+    grid-area: header;
+    background-color: tomato;
+    height: 10vh;
+    text-align: center;
+ 
+}
+
+.main{
+    grid-area: main;
+    background-color: lime;
+    height: 80vh;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: yellow;
+    height: 80vh;
+    text-align: center;
+ 
+}
+
+.footer{ grid-area: footer;
+background-color: blueviolet;
+height: 10vh
+}
+
+.box{
+    border: solid 1px black;
+ 
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'sidebar main main main'
+    ' footer footer footer footer'
+    ;
+
+    
+
+}
+
