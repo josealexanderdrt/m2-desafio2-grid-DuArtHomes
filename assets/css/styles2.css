@@ -1,7 +1,6 @@
 .header {
     grid-area: header;
     background-color: tomato;
-    height: 10vh;
     text-align: center;
  
 }
@@ -9,24 +8,25 @@
 .main{
     grid-area: main;
     background-color: lime;
-    height: 80vh;
+    
 }
 
 .sidebar{
     grid-area: sidebar;
     background-color: yellow;
-    height: 80vh;
+   
     text-align: center;
  
 }
 
 .footer{ grid-area: footer;
 background-color: blueviolet;
-height: 10vh
+
 }
 
 .box{
     border: solid 1px black;
+    
  
     
 }
@@ -34,12 +34,41 @@ height: 10vh
 .grid-container{
     display: grid;
     grid-template-areas: 
-    'header header header header'
-    'sidebar main main main'
-    ' footer footer footer footer'
+    'header header  '
+    'sidebar main '
+    'footer footer'
     ;
+    grid-template-columns: 0.5fr 5fr;
 
     
 
 }
 
+.tarjetas{ display: flex;
+flex-direction: row;
+flex-wrap: wrap;}
+
+
+
+
+.main-item{
+    border: 1px solid black;
+    display: flex;
+    flex-direction:column;
+    margin: 15px;
+    align-items: center;
+    height: 350px;
+    width: 400px;
+
+    
+}
+
+.main-item img{
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 30px;
+    
+}
+
+@media screen (max-width:600px)
