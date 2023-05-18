@@ -14,7 +14,7 @@ grid-template-areas:
 "footer main";
 gap: 0 10px 10px 10px;
 grid-template-columns: 10% auto;
-grid-template-rows: 6% auto 6%;
+grid-template-rows: 10% auto 6%;
 height: 100vh;}
 
 .logo{ height: 35px;}
@@ -43,7 +43,7 @@ aside{
 }
 
 main{ grid-area: main;
-background-color: #66f;}
+background-color: #eeedee;}
 
 footer{
     grid-area: footer;
