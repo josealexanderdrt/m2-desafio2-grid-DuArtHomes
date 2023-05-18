@@ -1,126 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400&family=Pathway+Gothic+One&family=Raleway:wght@300;500&family=Roboto&family=Trochut&display=swap');
 
-body{ font-family: Pathway Gothic One; }
+.grid-container{
+display: grid;
+grid-template-areas:
+"header main"
+"aside main"
+"footer main";
+gap: 10px;}
 
-*{ margin: 0
-    ;}
-
-header {
-    grid-area: header;
-    background-image: url(/assets/img/hader-fondo.jpg);
-    background-size: cover;
-    color: #2e2d29;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0;
-    
-   
-
- 
+.grid-item{
+    background-color: aqua;
 }
 
+header{
+    grid-area: header;
+    background-color: #66f;
+}
 
 aside{
     grid-area: aside;
-    background-color: #2e2d29;
-    color: #eeedee;
-    
-}
-  
-
-main{
-    grid-area: main;
-    background-color: rgb(255, 255, 255);
-    }
-
-
-ul{
-    text-align: left;
-   font-size: 15px;
-   margin-left: 0px;
-   padding-left: 10px;
-   list-style: none;
-
+    background-color: #66f;
 }
 
+main{ grid-area: main;
+background-color: #66f;}
 
-footer{ grid-area: footer;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #B5A083;
-        color: #2e2d29;
-       
+footer{
+    grid-area: footer;
+    background-color: #66f;
 }
 
-
-.grid-container{
-    
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "aside main"
-    "footer footer"
-    ;
-    gap: 10px;
-    grid-template-columns: 15% auto;
-    grid-template-rows: 6% auto 6%;
-    height: 100vh;
-
-
-   
+.bg{
+    background-position: center;
+    background-size: cover;
 }
-
-
-.galeria{
-    grid-area: galeria;
-    display: grid;
-    grid-template-columns: repeat(3,1fr) ;
-    grid-template-rows: 1fr 1fr;
-}
-
-
-/*
-
-.galeria{ display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10px;
-   
-
-}
-
-*/
-
-
-.main-item{
-    border: 1px solid black;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-  
-
-    
-}
-
- .main-item img{
-   height: 300px;
-   min-height: 200px;
-   width: 80%;
-   margin: 10px;
-  cursor: pointer;
-    
-}
-
-
-.main-item img:hover{
-	transform: scale(1.05);filter: opacity(.5);
-    border-radius: 10px;
-}
-
-.logo{ height: 35px;}
