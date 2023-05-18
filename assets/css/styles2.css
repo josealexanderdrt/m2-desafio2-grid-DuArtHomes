@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400&family=Pathway+Gothic+One&family=Raleway:wght@300;500&family=Roboto&family=Trochut&display=swap');
+
+body{ font-family: Pathway Gothic One; }
+
+*{ margin: 0
+    ;}
+
 
 .grid-container{
 display: grid;
@@ -5,7 +12,12 @@ grid-template-areas:
 "header main"
 "aside main"
 "footer main";
-gap: 10px;}
+gap: 0 10px 10px 10px;
+grid-template-columns: 10% auto;
+grid-template-rows: 6% auto 6%;
+height: 100vh;}
+
+.logo{ height: 35px;}
 
 .grid-item{
     background-color: aqua;
@@ -13,12 +25,21 @@ gap: 10px;}
 
 header{
     grid-area: header;
-    background-color: #66f;
+    color: #eeedee;
+    background-color: #2e2d29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
 }
 
 aside{
     grid-area: aside;
-    background-color: #66f;
+    background-color: #2e2d29;
+    color: #eeedee;
+    padding-left: 15px;
+    padding-top: 20px;
 }
 
 main{ grid-area: main;
@@ -26,10 +47,50 @@ background-color: #66f;}
 
 footer{
     grid-area: footer;
-    background-color: #66f;
+    background-color: #2e2d29;
 }
 
 .bg{
     background-position: center;
     background-size: cover;
+}
+
+.imagen1{
+    grid-area: a;
+    background-image: url(/assets/img/Basic\ 1.jpg);
+    background-size: contain;
+}
+
+.imagen2{
+    grid-area: b;
+    background-image: url(/assets/img/Basic\ 2.jpg);
+    background-size: contain;
+}
+
+.imagen4{
+    grid-area: c;
+    background-image: url(/assets/img/Basic\ 4.jpg);
+    background-size: contain;
+}
+
+.contacto{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contacto img{height: 400px;
+width: 400px;}
+.gallery{
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "d a "
+    "d b"
+    "d c" ;
+    grid-template-columns: auto 25%;
 }
