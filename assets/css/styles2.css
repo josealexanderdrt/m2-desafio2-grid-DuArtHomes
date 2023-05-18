@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400&family=Pathway+Gothic+One&family=Raleway:wght@300;500&family=Roboto&family=Trochut&display=swap');
+
+body{ font-family: Pathway Gothic One; }
+
 *{ margin: 0
     ;}
 
 header {
     grid-area: header;
-    background-color: tomato;
+    background-image: url(/assets/img/hader-fondo.jpg);
+    background-size: cover;
+    color: #2e2d29;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0;
+    
    
 
  
@@ -17,7 +24,9 @@ header {
 
 aside{
     grid-area: aside;
-    background-color: yellow;
+    background-color: #2e2d29;
+    color: #eeedee;
+    
 }
   
 
@@ -38,11 +47,12 @@ ul{
 
 
 footer{ grid-area: footer;
-        background-color: blueviolet;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #B5A083;
+        color: #2e2d29;
        
 }
 
@@ -113,3 +123,4 @@ footer{ grid-area: footer;
     border-radius: 10px;
 }
 
+.logo{ height: 35px;}
