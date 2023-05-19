@@ -48,6 +48,7 @@ background-color: #eeedee;}
 footer{
     grid-area: footer;
     background-color: #2e2d29;
+    color: #eeedee;
 }
 
 .bg{
@@ -93,4 +94,26 @@ width: 400px;}
     "d b"
     "d c" ;
     grid-template-columns: auto 25%;
+}
+
+
+button:hover{
+    background-color: #989162;
+    transform: scale(1.1);
+   
+}
+
+button a { 
+    text-decoration: none;
+    color:#eeedee ;
+    font-family: Pathway Gothic One;
+    }
+button{
+    width: 20%;
+    background-color: #2e2d29;
+    outline: none !important;
+    border-radius: 4px;
+    outline-style: none;
+    box-shadow: none;
+    color:#eeedee ;
 }

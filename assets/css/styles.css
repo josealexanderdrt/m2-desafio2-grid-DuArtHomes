@@ -18,14 +18,19 @@ header {
     }
 
 
-aside{
+aside {
     grid-area: aside;
-    background-color: #2e2d29;
+    background-color: #2e2929;
     color: #eeedee;
     padding-left: 15px;
     
 }
 
+aside a{
+    color: #eeedee;
+    text-decoration: none;
+    
+}
 
 aside  li:hover{
 	transform: scale(1.05);filter: opacity(0.5);
@@ -79,7 +84,7 @@ footer{ grid-area: footer;
    
 }
 
-
+/*  Galería de casas a la venta */
 .galeria{
     grid-area: galeria;
     display: grid;
@@ -87,20 +92,6 @@ footer{ grid-area: footer;
     grid-template-rows: 1fr 1fr;
 }
 
-
-
-
-/*
-
-.galeria{ display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10px;
-   
-
-}
-
-*/
 
 
 .main-item{
@@ -124,6 +115,7 @@ footer{ grid-area: footer;
     
 }
 
+.price {font-size: 20px;}
 
 .main-item img:hover{
 	transform: scale(1.05);filter: opacity(.5);
@@ -131,3 +123,25 @@ footer{ grid-area: footer;
 }
 
 .logo{ height: 35px;}
+
+/* Boton*/
+
+button:hover{
+    background-color: #989162;
+    transform: scale(1.1);
+    width: 13%;
+}
+
+button a { 
+    text-decoration: none;
+    color:#eeedee ;
+    font-family: Pathway Gothic One;
+    }
+button{
+    width: 30%;
+    background-color: #2e2d29;
+    outline: none !important;
+    border-radius: 4px;
+    outline-style: none;
+    box-shadow: none;
+}
